@@ -12,4 +12,7 @@
   <p>
     <b>Reverse Complement</b>: {{reverse_complement}}
   </p>
+{% elif bad_bases %}
+  <p>
+     <b> Please use only 'A', 'C', 'T', and 'G'</b>: {% autoescape off %}{{bad_bases}}{% endautoescape %}
 {% endif %}
